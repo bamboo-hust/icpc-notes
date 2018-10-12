@@ -1,0 +1,50 @@
+Counting spanning trees
+Linear programming
+FFT, NTT
+Partition formula
+Generating functions
+Gauss elimination
+Taylor expansion
+Count prime numbers up to N
+
+Dinic flow
+Mincost maxflow
+Bounded flow
+Mincost max-matching - Hungarian algorithm
+General matching
+Mincut undirected graph - StoerWagner
+
+Directed minimum spanning tree
+Bridge & articulations
+Stable marriage
+
+Treap
+Big integer
+Splay
+Link cut tree
+Heavy light decomposition
+
+System of linear equations
+Extended Euclide
+Euler phi
+Pollard Rho
+
+Suffix automata
+Suffix array
+Aho Corasick
+Z-algorithm
+KMP
+Manacher
+
+Convex Hull trick:
+	stack based
+	IT
+Knuth optimization
+
+Geometry:
+	Point
+	Line
+	Circle
+	Plane
+	Convex hull
+	Rect in Rect
