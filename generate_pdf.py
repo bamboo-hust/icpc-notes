@@ -1,5 +1,7 @@
 #!/usr/bin/python
 import subprocess
+import os
+
 code_dir = "code"
 title = "Bamboo Team Notes"
 
@@ -62,3 +64,4 @@ if __name__ == "__main__":
         f.write(tex)
     latexmk_options = ["latexmk", "-pdf", "notebook.tex"]
     subprocess.call(latexmk_options)
+    os.system("latexmk -c")

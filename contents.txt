@@ -3,6 +3,10 @@
 # Subsections within a section should follow the format:
 #   [filename within code directory][tab character \t][subsection title]
 
+[Arithmetic]
+ExtendedEuclide.cc	Extended Euclide
+SystemLinearEquations.cc	System of linear equations
+
 [Combinatorial optimization]
 
 [Geometry]
