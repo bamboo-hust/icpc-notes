@@ -1,45 +1,45 @@
-Counting spanning trees
-Linear programming
-FFT, NTT
-Partition formula
-Generating functions
-Gauss elimination
-Taylor expansion
-Count prime numbers up to N
+Counting spanning trees - D
+Linear programming - Q
+FFT, NTT - Q
+Partition formula - Q
+#Generating functions
+Gauss elimination - D
+#Taylor expansion
+Count prime numbers up to N - D
 
-Dinic flow
-Mincost maxflow
-Bounded flow
-Mincost max-matching - Hungarian algorithm
-General matching
-Mincut undirected graph - StoerWagner
+Dinic flow - Q
+Mincost maxflow - Q
+Bounded flow - D
+Mincost max-matching - Hungarian algorithm - D
+General matching - D
+Mincut undirected graph - StoerWagner - D
 
-Directed minimum spanning tree
-Bridge & articulations
-Stable marriage
+Directed minimum spanning tree - D
+Bridge & articulations - D
+Stable marriage - D
 
-Treap
-Big integer
-Splay
-Link cut tree
-Heavy light decomposition
+Treap - Q
+Big integer - D
+#Splay
+Link cut tree - D 
+#Heavy light decomposition
 
-System of linear equations
-Extended Euclide
-Euler phi
-Pollard Rho
+System of linear equations - D
+Extended Euclide - D
+Euler phi - Q
+Pollard Rho - Q
 
-Suffix automata
-Suffix array
-Aho Corasick
-Z-algorithm
-KMP
-Manacher
+Suffix automata - Q
+Suffix array - Q
+Aho Corasick - D
+Z-algorithm - D
+KMP - D
+Manacher - D
 
 Convex Hull trick:
-	stack based
-	IT
-Knuth optimization
+	stack based - D
+	IT - D
+Knuth optimization - D
 
 Geometry:
 	Point
