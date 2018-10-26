@@ -1,3 +1,5 @@
+//Poly Invert: R(2n) = 2R(n) - R(n) ^ 2 * F where R(z) = invert F(z)
+//Poly Sqrt: 2 * S(2n) = S(n) + F * S(n) ^ -1
 const int MOD = 998244353;
 struct NTT {
     int base = 1;
