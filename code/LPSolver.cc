@@ -1,7 +1,16 @@
+/**
+ * minimize c^T * x
+ * subject to Ax <= b
+ * and x >= 0
+ * The input matrix a will have the following form
+ * 0 c c c c c
+ * b A A A A A
+ * b A A A A A
+ * b A A A A A
+ **/
+
 typedef long double ld;
- 
 const ld EPS = 1e-8;
- 
 struct LPSolver {
     static vector<ld> simplex(vector<vector<ld>> a) {
         int n = (int) a.size() - 1;
@@ -17,19 +26,13 @@ struct LPSolver {
             vector<int> pos;
             for (int j = 0; j <= m; j++) {
                 a[x][j] /= k;
-                if (fabs(a[x][j]) > EPS) {
-                    pos.push_back(j);
-                }
+                if (fabs(a[x][j]) > EPS) pos.push_back(j);
             }
             for (int i = 0; i <= n; i++) {
-                if (fabs(a[i][y]) < EPS || i == x) {
-                    continue;
-                }
+                if (fabs(a[i][y]) < EPS || i == x) continue;
                 k = a[i][y];
                 a[i][y] = 0;
-                for (int j : pos) {
-                    a[i][j] -= k * a[x][j];
-                }
+                for (int j : pos) a[i][j] -= k * a[x][j];
             }
         };
         while (1) {
@@ -39,18 +42,14 @@ struct LPSolver {
                     x = i;
                 }
             }
-            if (x == -1) {
-                break;
-            }
+            if (x == -1) break;
             int y = -1;
                 for (int j = 1; j <= m; j++) {
                     if (a[x][j] < -EPS && (y == -1 || a[x][j] < a[x][y])) {
                     y = j;
                 }
             }
-            if (y == -1) {
-                return vector<ld>(); // infeasible
-            }
+            if (y == -1) return vector<ld>(); // infeasible
             pivot(x, y);
         }
         while (1) {
@@ -60,25 +59,19 @@ struct LPSolver {
                     y = j;
                 }
             }
-            if (y == -1) {
-                break;
-            }
+            if (y == -1) break;
             int x = -1;
             for (int i = 1; i <= n; i++) {
                 if (a[i][y] > EPS && (x == -1 || a[i][0] / a[i][y] < a[x][0] / a[x][y])) {
                     x = i;
                 }
             }
-            if (x == -1) {
-                return vector<ld>(); // unbounded
-            }
+            if (x == -1) return vector<ld>(); // unbounded
             pivot(x, y);
         }
         vector<ld> ans(m + 1);
         for (int i = 1; i <= n; i++) {
-            if (left[i] <= m) {
-                ans[left[i]] = a[i][0];
-            }
+            if (left[i] <= m) ans[left[i]] = a[i][0];
         }
         ans[0] = -a[0][0];
         return ans;
