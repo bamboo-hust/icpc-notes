@@ -10,6 +10,7 @@ SystemLinearEquations.cc	System of linear equations
 [String]
 SuffixArray.cc	Suffix Array
 AhoCorasick.cc	Aho Corasick
+Zalgo.cc	Z algorithm
 
 [Combinatorial optimization]
 
