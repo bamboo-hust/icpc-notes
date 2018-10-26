@@ -4,6 +4,9 @@ Linear programming - Q
 	https://codeforces.com/contest/375/submission/44891061
 FFT, NTT - Q
 	https://codeforces.com/contest/438/submission/39451171
+	Poly Invert: R(2n) = 2R(n) - R(n) ^ 2 * F where R(z) = invert F(z)
+	Poly Sqrt: 2 * S(2n) = S(n) + F * S(n) ^ -1
+
 Partition formula - Q
 #Generating functions
 Gauss elimination - D

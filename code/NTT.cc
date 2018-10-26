@@ -69,4 +69,46 @@ struct NTT {
         a.resize(nResult);
         return a;
     }
+    vector<int> polyInv(vector<int> r, vector<int> f) {
+        vector<int> foo = mult(r, f);
+        foo.resize(f.size());
+        foo[0] = sub(2, foo[0]);
+        for (int i = 1; i < foo.size(); i++) {
+            foo[i] = sub(0, foo[i]);
+        }
+        vector<int> res = mult(r, foo);
+        res.resize(f.size());
+        return res;
+    }
+    vector<int> polySqrt(vector<int> s, vector<int> invS, vector<int> f) {
+        vector<int> res = mult(f, invS);
+        res.resize(f.size());
+        for (int i = 0; i < s.size(); i++) {
+            res[i] = add(res[i], s[i]);
+        }
+        for (int i = 0; i < res.size(); i++) {
+            res[i] = mul(res[i], INV_2);
+        }
+        return res;
+    }
+    vector<int> getSqrt(vector<int> c, int sz) {
+        vector<int> sqrtC = {1}, invSqrtC = {1}; //change this if c[0] != 1
+        for (int k = 1; k < (1 << sz); k <<= 1) {
+            vector<int> foo(c.begin(), c.begin() + (k * 2));
+            vector<int> bar = sqrtC;
+            bar.resize(bar.size() * 2, 0);
+            vector<int> tempInv = polyInv(invSqrtC, bar);
+            sqrtC = polySqrt(sqrtC, tempInv, foo);
+            invSqrtC = polyInv(invSqrtC, sqrtC);
+        }
+        return sqrtC;
+    }
+    vector<int> getInv(vector<int> c, int sz) {
+        vector<int> res = {INV_2}; // change this if c[0] != 2
+        for (int k = 1; k < (1 << sz); k <<= 1) {
+            vector<int> foo(c.begin(), c.begin() + (k * 2));
+            res = polyInv(res, foo);
+        }
+        return res;
+    }
 } ntt;
