@@ -9,6 +9,7 @@ SystemLinearEquations.cc	System of linear equations
 
 [String]
 SuffixArray.cc	Suffix Array
+AhoCorasick.cc	Aho Corasick
 
 [Combinatorial optimization]
 
