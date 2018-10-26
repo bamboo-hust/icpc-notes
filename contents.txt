@@ -3,9 +3,13 @@
 # Subsections within a section should follow the format:
 #   [filename within code directory][tab character \t][subsection title]
 
-[Arithmetic]
+[Number theory]
 ExtendedEuclide.cc	Extended Euclide
 SystemLinearEquations.cc	System of linear equations
+
+[String]
+SuffixArray.cc	Suffix Array
+AhoCorasick.cc	Aho Corasick
 
 [Combinatorial optimization]
 

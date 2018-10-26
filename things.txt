@@ -32,7 +32,7 @@ Euler phi - Q
 Pollard Rho - Q
 
 Suffix automata - Q
-Suffix array - Q
+Suffix array - D - Done
 Aho Corasick - D
 Z-algorithm - D
 KMP - D
