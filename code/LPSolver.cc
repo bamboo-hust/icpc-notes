@@ -7,6 +7,7 @@
  * b A A A A A
  * b A A A A A
  * b A A A A A
+ * Result vector will be: val x x x x x
  **/
 
 typedef long double ld;
