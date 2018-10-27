@@ -20,6 +20,7 @@ SuffixAutomaton.cc	Suffix Automaton
 [Numerical algorithms]
 LPSolver.cc	Simplex Algorithm
 NTT.cc	NTT
+Partition.cc	Partition Formula
 
 [Graph algorithms]
 DinicFlow.cc	Dinic Flow
