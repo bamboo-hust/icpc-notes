@@ -11,6 +11,7 @@ SystemLinearEquations.cc	System of linear equations
 SuffixArray.cc	Suffix Array
 AhoCorasick.cc	Aho Corasick
 Zalgo.cc	Z algorithm
+SuffixAutomaton.cc	Suffix Automaton
 
 [Combinatorial optimization]
 
@@ -18,8 +19,11 @@ Zalgo.cc	Z algorithm
 
 [Numerical algorithms]
 LPSolver.cc	Simplex Algorithm
+NTT.cc	NTT
 
 [Graph algorithms]
+DinicFlow.cc	Dinic Flow
+MinCostMaxFlow.cc	Min Cost-Max Flow
 
 [Data structures]
 
