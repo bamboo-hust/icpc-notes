@@ -1,5 +1,5 @@
 Counting spanning trees - D
-Linear programming - Q
+#Linear programming - Q
 	https://www.hackerearth.com/submission/20905850/
 	https://codeforces.com/contest/375/submission/44891061
 FFT, NTT - Q
@@ -10,8 +10,8 @@ Gauss elimination - D
 #Taylor expansion
 Count prime numbers up to N - D
 
-Dinic flow - Q
-Mincost maxflow - Q
+#Dinic flow - Q
+#Mincost maxflow - Q
 Bounded flow - D
 Mincost max-matching - Hungarian algorithm - D
 General matching - D
@@ -32,7 +32,7 @@ Extended Euclide - D
 Euler phi - Q
 Pollard Rho - Q
 
-Suffix automata - Q
+#Suffix automata - Q
 Suffix array - D - Done
 Aho Corasick - D
 Z-algorithm - D
