@@ -25,6 +25,8 @@ Partition.cc	Partition Formula
 [Graph algorithms]
 DinicFlow.cc	Dinic Flow
 MinCostMaxFlow.cc	Min Cost-Max Flow
+BoundedFlow.cc	Bounded Feasible Flow
+Hungarian.cc	Hungarian Algorithm
 
 [Data structures]
 

@@ -12,8 +12,8 @@ Count prime numbers up to N - D
 
 #Dinic flow - Q
 #Mincost maxflow - Q
-Bounded flow - D
-Mincost max-matching - Hungarian algorithm - D
+Bounded flow - D - Done
+Mincost max-matching - Hungarian algorithm - D - Done
 General matching - D
 Mincut undirected graph - StoerWagner - D
 
@@ -27,16 +27,16 @@ Big integer - D
 Link cut tree - D 
 #Heavy light decomposition
 
-System of linear equations - D
-Extended Euclide - D
+System of linear equations - D - Done
+Extended Euclide - D - Done
 Euler phi - Q
 Pollard Rho - Q
 
 #Suffix automata - Q
 Suffix array - D - Done
-Aho Corasick - D
-Z-algorithm - D
-KMP - D
+Aho Corasick - D - Done
+Z-algorithm - D - Done
+KMP - D - Done
 Manacher - D
 
 Convex Hull trick:
