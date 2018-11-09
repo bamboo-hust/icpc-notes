@@ -16,6 +16,7 @@ SuffixAutomaton.cc	Suffix Automaton
 [Combinatorial optimization]
 
 [Geometry]
+Geometry.cc	Geometry
 
 [Numerical algorithms]
 LPSolver.cc	Simplex Algorithm
