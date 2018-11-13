@@ -1,48 +1,35 @@
 struct AhoCorasick {
-    static const int ALPHABET_SIZE = 26;
+    const int N = 30030;
 
-    struct Node {
-        Node* to[ALPHABET_SIZE];
-        Node* fail;
-        int ending_length; // 0 if is not ending
-
-        Node() {
-            for (int i = 0; i < ALPHABET_SIZE; ++i) to[i] = nullptr;
-            fail = nullptr;
-            ending_length = false;
-        }
-    };
-
-    Node* root;
+    int fail[N];
+    int to[N][2];
+    int ending[N];
+    int sz;
 
     void add(const string &s) {
-        Node* cur_node = root;
-        for (char c : s) {
-            c -= 'a';
-            if (!cur_node->to[c]) {
-                cur_node->to[c] = new Node();
+        int node = 1;
+        for (int i = 0; i < s.size(); ++i) {
+            if (!to[node][s[i] - 'a']) {
+                to[node][s[i] - 'a'] = ++sz;
             }
-            cur_node = cur_node->to[c];
+            node = to[node][s[i] - 'a'];
         }
-        cur_node->ending_length = s.size();
+        ending[node] = true;
     }
 
-    AhoCorasick(const vector<string> &a) {
-        root = new Node();
-        for (const string &s : a) add(s);
-
-        queue<Node*> Q;
-        root->fail = root;
-        Q.push(root);
-
+    void push() {
+        queue<int> Q;
+        Q.push(1);
+        fail[1] = 1;
         while (!Q.empty()) {
-            Node *par = Q.front(); Q.pop();
-            for (int c = 0; c < ALPHABET_SIZE; ++c) {
-                if (par->to[c]) {
-                    par->to[c]->fail = par == root ? root : par->fail->to[c];
-                    Q.push(par->to[c]);
+            int u = Q.front(); Q.pop();
+            for (int i = 0; i < 26; ++i) {
+                int &v = to[u][i];
+                if (!v) {
+                    v = u == 1 ? 1 : to[fail[u]][i];
                 } else {
-                    par->to[c] = par == root ? root : par->fail->to[c]; 
+                    fail[v] = u == 1 ? 1 : to[fail[u]][i];
+                    Q.push(v);
                 }
             }
         }

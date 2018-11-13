@@ -24,6 +24,7 @@ NTT.cc	NTT
 Partition.cc	Partition Formula
 
 [Graph algorithms]
+BipartiteMatching.cc	Bipartite Maximum Matching
 DinicFlow.cc	Dinic Flow
 MinCostMaxFlow.cc	Min Cost-Max Flow
 BoundedFlow.cc	Bounded Feasible Flow
