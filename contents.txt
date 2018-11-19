@@ -22,6 +22,7 @@ Geometry.cc	Geometry
 LPSolver.cc	Simplex Algorithm
 NTT.cc	NTT
 Partition.cc	Partition Formula
+GeneratingFunction.cc	generating function
 
 [Graph algorithms]
 BipartiteMatching.cc	Bipartite Maximum Matching
