@@ -1,9 +1,5 @@
-# Any line followed by a '#' character is ignored
-# Section headings must be in square brackets
-# Subsections within a section should follow the format:
-#   [filename within code directory][tab character \t][subsection title]
-
 [Number theory]
+CountPrimes.cc	Count primes up to N
 ExtendedEuclide.cc	Extended Euclide
 SystemLinearEquations.cc	System of linear equations
 
@@ -11,6 +7,7 @@ SystemLinearEquations.cc	System of linear equations
 SuffixArray.cc	Suffix Array
 AhoCorasick.cc	Aho Corasick
 Zalgo.cc	Z algorithm
+Manacher.cc	Manacher
 SuffixAutomaton.cc	Suffix Automaton
 
 [Combinatorial optimization]
@@ -19,6 +16,7 @@ SuffixAutomaton.cc	Suffix Automaton
 Geometry.cc	Geometry
 
 [Numerical algorithms]
+Gauss.cc	Gauus Elimination
 LPSolver.cc	Simplex Algorithm
 NTT.cc	NTT
 Partition.cc	Partition Formula
@@ -26,6 +24,7 @@ GeneratingFunction.cc	generating function
 
 [Graph algorithms]
 BipartiteMatching.cc	Bipartite Maximum Matching
+Blossom.cc	General Matching
 DinicFlow.cc	Dinic Flow
 MinCostMaxFlow.cc	Min Cost-Max Flow
 BoundedFlow.cc	Bounded Feasible Flow

@@ -6,15 +6,15 @@ FFT, NTT - Q
 	https://codeforces.com/contest/438/submission/39451171
 #Partition formula - Q
 #Generating functions
-Gauss elimination - D
+Gauss elimination - D - Done
 #Taylor expansion
-Count prime numbers up to N - D
+Count prime numbers up to N - D - Done
 
 #Dinic flow - Q
 #Mincost maxflow - Q
 Bounded flow - D - Done
 Mincost max-matching - Hungarian algorithm - D - Done
-General matching - D
+General matching - D - Done
 Mincut undirected graph - StoerWagner - D
 
 Directed minimum spanning tree - D
@@ -37,14 +37,14 @@ Suffix array - D - Done
 Aho Corasick - D - Done
 Z-algorithm - D - Done
 KMP - D - Done
-Manacher - D
+Manacher - D - Done
 
 Convex Hull trick:
 	stack based - D
 	IT - D
 Knuth optimization - D
 
-Geometry:
+#Geometry:
 	Point
 	Line
 	Circle
