@@ -2,6 +2,7 @@
 CountPrimes.cc	Count primes up to N
 ExtendedEuclide.cc	Extended Euclide
 SystemLinearEquations.cc	System of linear equations
+PollardRho.cc	Pollard Rho
 
 [String]
 SuffixArray.cc	Suffix Array

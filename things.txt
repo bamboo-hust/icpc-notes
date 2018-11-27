@@ -30,7 +30,7 @@ Link cut tree - D
 System of linear equations - D - Done
 Extended Euclide - D - Done
 Euler phi - Q
-Pollard Rho - Q
+#Pollard Rho - Q
 
 #Suffix automata - Q
 Suffix array - D - Done
