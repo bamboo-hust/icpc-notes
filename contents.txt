@@ -32,6 +32,7 @@ BoundedFlow.cc	Bounded Feasible Flow
 Hungarian.cc	Hungarian Algorithm
 
 [Data structures]
+Treap.cc	Treap
 
 [Miscellaneous]
 RNG.cc	RNG
