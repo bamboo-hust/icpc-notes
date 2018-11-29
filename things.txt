@@ -21,10 +21,10 @@ Directed minimum spanning tree - D
 Bridge & articulations - D
 Stable marriage - D
 
-Treap - Q
+Treap - D - Done
 Big integer - D
 #Splay
-Link cut tree - D 
+Link cut tree - D - Cannot do
 #Heavy light decomposition
 
 System of linear equations - D - Done
