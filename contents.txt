@@ -21,6 +21,7 @@ Gauss.cc	Gauus Elimination
 LPSolver.cc	Simplex Algorithm
 NTT.cc	NTT
 FFT.cc	FFT
+FFT_chemthan.cc	FFT chemthan
 Partition.cc	Partition Formula
 GeneratingFunction.cc	generating function
 
