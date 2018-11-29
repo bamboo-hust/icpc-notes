@@ -25,16 +25,19 @@ Partition.cc	Partition Formula
 GeneratingFunction.cc	generating function
 
 [Graph algorithms]
+BridgesArticulations.cc	Bridges and Articulations
 BipartiteMatching.cc	Bipartite Maximum Matching
 Blossom.cc	General Matching
 DinicFlow.cc	Dinic Flow
 MinCostMaxFlow.cc	Min Cost-Max Flow
 BoundedFlow.cc	Bounded Feasible Flow
 Hungarian.cc	Hungarian Algorithm
+MinCut.cc	Undirected mincut
 
 [Data structures]
 Treap.cc	Treap
 BigInt.cc	Big Integer
+ITConvexHull.cc	Convex Hull IT
 
 [Miscellaneous]
 RNG.cc	RNG
