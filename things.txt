@@ -22,7 +22,7 @@ Bridge & articulations - D
 Stable marriage - D
 
 Treap - D - Done
-Big integer - D
+Big integer - D - Done
 #Splay
 Link cut tree - D - Cannot do
 #Heavy light decomposition

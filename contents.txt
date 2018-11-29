@@ -34,6 +34,7 @@ Hungarian.cc	Hungarian Algorithm
 
 [Data structures]
 Treap.cc	Treap
+BigInt.cc	Big Integer
 
 [Miscellaneous]
 RNG.cc	RNG
