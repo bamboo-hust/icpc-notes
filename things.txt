@@ -2,7 +2,7 @@ Counting spanning trees - D
 #Linear programming - Q
 	https://www.hackerearth.com/submission/20905850/
 	https://codeforces.com/contest/375/submission/44891061
-FFT, NTT - Q
+#FFT, NTT - Q
 	https://codeforces.com/contest/438/submission/39451171
 #Partition formula - Q
 #Generating functions

@@ -20,6 +20,7 @@ Geometry.cc	Geometry
 Gauss.cc	Gauus Elimination
 LPSolver.cc	Simplex Algorithm
 NTT.cc	NTT
+FFT.cc	FFT
 Partition.cc	Partition Formula
 GeneratingFunction.cc	generating function
 
