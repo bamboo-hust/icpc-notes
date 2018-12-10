@@ -15,14 +15,14 @@ Count prime numbers up to N - D - Done
 Bounded flow - D - Done
 Mincost max-matching - Hungarian algorithm - D - Done
 General matching - D - Done
-Mincut undirected graph - StoerWagner - D
+Mincut undirected graph - StoerWagner - D - Done
 
 Directed minimum spanning tree - D
-Bridge & articulations - D
+Bridge & articulations - D - Done
 Stable marriage - D
 
 Treap - D - Done
-Big integer - D
+Big integer - D - Done
 #Splay
 Link cut tree - D - Cannot do
 #Heavy light decomposition
@@ -40,8 +40,8 @@ KMP - D - Done
 Manacher - D - Done
 
 Convex Hull trick:
-	stack based - D
-	IT - D
+	stack based - D - Quang knows it
+	IT - D - Done
 Knuth optimization - D
 
 #Geometry:
