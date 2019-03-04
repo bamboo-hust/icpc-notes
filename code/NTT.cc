@@ -13,12 +13,7 @@ struct NTT {
             u >>= 1;
             maxBase++;
         }
-        while (1) {
-            if (power(root, 1 << maxBase) == 1 && power(root, 1 << (maxBase - 1)) != 1) {
-                break;
-            }
-            root++;
-        }
+        while (power(root, 1 << maxBase) != 1 || power(root, 1 << (maxBase - 1)) == 1) root++;
     }
     void ensure(int curBase) {
         assert(curBase <= maxBase);
@@ -60,11 +55,13 @@ struct NTT {
         int curBase = 0;
         while ((1 << curBase) < nResult) curBase++;
         ensure(curBase);
-        a.resize(1 << curBase), b.resize(1 << curBase);
+        int n = 1 << curBase;
+        a.resize(n), b.resize(n);
         fft(a);
         fft(b);
-        for (int i = 0; i < (1 << curBase); i++) {
-            a[i] = mul(mul(a[i], b[i]), inv(1 << curBase));
+        int invN = inv(n);
+        for (int i = 0; i < n; i++) {
+            a[i] = mul(mul(a[i], b[i]), invN);
         }
         reverse(a.begin() + 1, a.end());
         fft(a);
