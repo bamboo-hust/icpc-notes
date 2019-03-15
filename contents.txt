@@ -35,6 +35,7 @@ MinCostMaxFlow.cc	Min Cost-Max Flow
 BoundedFlow.cc	Bounded Feasible Flow
 Hungarian.cc	Hungarian Algorithm
 MinCut.cc	Undirected mincut
+Eulerian.cc	Eulerian Path/Circuit
 
 [Data structures]
 Treap.cc	Treap
