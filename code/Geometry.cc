@@ -345,3 +345,20 @@ struct SmallestEnclosingCircle {
         return Circle(p, (p - a).len());
     }
 };
+bool inside(const Point &u, const vector<Point> &a) {
+    for (int i = 0; i < n; i++) {
+        if (cmp((a[i] - u) % (a[i == n - 1 ? 0 : i + 1] - u), 0.0) != 0) continue;
+        if (cmp((a[i] - u) * (a[i == n - 1 ? 0 : i + 1] - u), 0.0) > 0) continue;
+        return 1;
+    }
+    int res = 0;
+    for (int i = 0; i < n; i++) {
+        Point v = a[i], w = a[i == n - 1 ? 0 : i + 1];
+        if (cmp(v.x, w.x) == 0) continue;
+        if (v.x > w.x) swap(v, w);
+        if (u.x < v.x - EPS) continue;
+        if (u.x > w.x - EPS) continue;
+        res ^= (cmp((u - v) % (w - v), 0) >= 0);
+    }
+    return res;
+}
