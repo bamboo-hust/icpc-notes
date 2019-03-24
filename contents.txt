@@ -25,6 +25,7 @@ Bitwise-FFT.cc	Bitwise FFT
 FFT_chemthan.cc	FFT chemthan
 Partition.cc	Partition Formula
 GeneratingFunction.cc	Generating function
+CRT.cc	Chinese Remainder Theorem
 
 [Graph algorithms]
 BridgesArticulations.cc	Bridges and Articulations
