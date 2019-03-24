@@ -24,7 +24,7 @@ FFT.cc	FFT
 Bitwise-FFT.cc	Bitwise FFT
 FFT_chemthan.cc	FFT chemthan
 Partition.cc	Partition Formula
-GeneratingFunction.cc	generating function
+GeneratingFunction.cc	Generating function
 
 [Graph algorithms]
 BridgesArticulations.cc	Bridges and Articulations
@@ -36,6 +36,7 @@ BoundedFlow.cc	Bounded Feasible Flow
 Hungarian.cc	Hungarian Algorithm
 MinCut.cc	Undirected mincut
 Eulerian.cc	Eulerian Path/Circuit
+TwoSAT.cc	2-SAT
 
 [Data structures]
 Treap.cc	Treap
