@@ -16,7 +16,7 @@ int gauss(vector<vector<double> > a, vector<double> &ans) {
         where[col] = row;
         for (int i = 0; i < m; ++i) if (i != row) {
             double coef = a[i][col] / a[row][col];
-            for (int j = col; j <= m; ++j) {
+            for (int j = col; j <= n; ++j) {
                 a[i][j] -= a[row][j] * coef;
             }
         }
