@@ -2,11 +2,15 @@ struct AhoCorasick {
     const int N = 30030;
 
     int fail[N];
-    int to[N][2];
+    int to[N][26];
     int ending[N];
     int sz;
+    
+    AhoCorasick() {
+        sz = 1;
+    }
 
-    void add(const string &s) {
+    int add(const string &s) {
         int node = 1;
         for (int i = 0; i < s.size(); ++i) {
             if (!to[node][s[i] - 'a']) {
@@ -15,6 +19,7 @@ struct AhoCorasick {
             node = to[node][s[i] - 'a'];
         }
         ending[node] = true;
+        return node;
     }
 
     void push() {
