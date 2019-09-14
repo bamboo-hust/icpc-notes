@@ -2,7 +2,7 @@ struct AhoCorasick {
     const int N = 30030;
 
     int fail[N];
-    int to[N][2];
+    int to[N][26];
     int ending[N];
     int sz;
 
