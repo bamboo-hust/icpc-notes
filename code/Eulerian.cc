@@ -16,7 +16,13 @@ struct EulerianGraph {
     vector<int> get_eulerian_path() {
         vector<int> path, s;
         vector<bool> was(num_edges);
-        s.push_back(1); // start of eulerian path
+        
+        s.push_back(1);
+        // start of eulerian path
+        // directed graph: deg_out - deg_in == 1
+        // undirected graph: odd degree
+        // for eulerian cycle: any vertex is OK
+        
         while (!s.empty()) {
             int u = s.back();
             bool found = false;
