@@ -55,11 +55,11 @@ Knuth optimization - D
 Voronoi diagram
 Lagrange interpolation - done
 Matrix canonical form / eigen-decomposition - done
-A-LCS
+A-LCS - done
 Dual graph
 Mobius inversion
 Binary vector basis - done
-Half plane intersection
+#Half plane intersection
 Link cut tree
 Fibonacci formula - done
 Catalan formula - done
@@ -67,9 +67,9 @@ Palindromic tree
 #DP optimize DivideFFT
 Pell equation
 Cubic equation formula (RR)
-Green theorem
+Green theorem - done
 Karatsuba
 Burnside lemma
-Hall theorem
+#Hall theorem
 Center of mass polygon - done
 
