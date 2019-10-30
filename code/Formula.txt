@@ -1,4 +1,4 @@
-1. CRT
+CRT
 Let m, n, a, b be any interger. Let g = gcd(m, n).
     x % m = a
     x % n = b
@@ -10,26 +10,26 @@ x = (a * v * n + b * u * m) / g
 
 ==================================================================
 
-2. Eigen Decomposition
+Eigen Decomposition
 A = QDQ^{-1}
 Q = nxn matrix, ith column is eigenvector qi
 D = diagonal matrix, D_i_i is eigenvalue lambda_i
 
 ==================================================================
 
-3. Generating function
+Generating function
 1 / ( (1-ax) ^ (k+1) ) = sum_(0->INF)_{ a^n * C(n+k, k) * x^n }
 
 ==================================================================
 
-4. Partition
+Partition
 Generating function : PI: (1 / (1 - x ^ k))
 p(n)=p(n-1)+p(n-2)-p(n-5)-p(n-7)+p(n-12)+p(n-15)-p(n-22)- ...
 p_k = k * (3k - 1) / 2 with k = 1, -1, 2, -2, 3, -3, ...
  
 ==================================================================
 
-5. Center of mass + green theorem
+Center of mass + green theorem
 Cx = 1/6A * sum_(0->n-1)_{ (x_i + x_i+1) * (x_i * y_i+1 - x_i+1 * y_i) }
 Cy = 1/6A * sum_(0->n-1)_{ (y_i + y_i+1) * (x_i * y_i+1 - x_i+1 * y_i) }
 A = 1/2 * sum_(0->n-1)_{(x_i * y_i+1 - x_i+1 * y_i)}
@@ -37,12 +37,12 @@ Green: C_intergral(Pdx + Qdy) = 2D_intergral(dQ/dx - dP/dy)dxdy
 
 ==================================================================
 
-6. Fibonacci mod 10^9+9
+Fibonacci mod 10^9+9
 Fn = 276601605(691504013^n - 308495997^n) [10^9 + 9]
 
 ==================================================================
 
-7. SQRT for loop
+SQRT for loop
 for (int i = 1, la; i <= n; i = la + 1) {
     la = n / (n / i);
     //n / x yields the same value for i <= x <= la.
@@ -50,13 +50,13 @@ for (int i = 1, la; i <= n; i = la + 1) {
 
 ==================================================================
 
-8. Mobius inversion
+Mobius inversion
 if g(n) = sum_(d|n)_f(d) with n >= 1
 then f(n) = sum_(d|n)_mu(d)*g(n/d) with n >= 1
 
 ==================================================================
 
-9. Dual graph
+Dual graph
 Euler formula: V - E + F = 2
 in dual graph: V <=> F
 in complement dual graph: (removed egdes in the original => edges in dual):
@@ -64,7 +64,7 @@ in complement dual graph: (removed egdes in the original => edges in dual):
 
 ==================================================================
 
-10. Pell equation
+Pell equation
 x^2 - ny^2 = 1
 x1, y1 is the minimal solution
 x_k+1 = x_1*x_k + n*y_1*y_k
@@ -72,14 +72,14 @@ y_k+1 = x_1*y_k + y_1*x_k
 
 ==================================================================
 
-11. Burnside lemma
+Burnside lemma
 G: finite group acts on set X
 X_g: set of elements fixed by g
 Number of orbits: |X/G| = 1/|G| * sum_(g in G)_|X_g|
 
 ==================================================================
 
-12. Euler function
+Euler function
 Gamma(z) = intergral_{0->INF}_{ x^{z-1} e^{x} dx }
 Beta(z) = intergral_{0->1}_{ t^{x-1} (1-t)^{y-1} dt }
 G(n) = (n-1)!
@@ -98,3 +98,25 @@ Plus --> Inner
 
 Special cases:
 - If 1 circle --> line, change ki to 0 --> k4 = k1 + k2 +- 2*sqrt(k1*k2)
+
+==================================================================
+
+Hacken Bush
+Green Hacken Bush: subtree of u: g(u) = SUMXOR{g(v)} + 1 with v is a child of u
+RB Hacken Bush:
+a. subtree of u: g(u) = SUM_{f(g(v))} with v is a child of u
+if color of {u, v} is blue: f(x) = (x+i) / 2^(i-1) with smallest i >= 1 such that x + i > 1
+if color of {u, v} is red:  f(x) = (x-i) / 2^(i-1) with smallest i >= 1 such that x - i < -1
+b. Loop: find 2 nearest 2 points where segment change color, cut the rest in half
+the value of loop is sum of the 2 segments.
+
+==================================================================
+
+Prufer sequence
+a. Get prufer code of a tree
+    - Find a leaf of lowest label x, connect to y. Remove x, add y to the sequence
+    - Repeat until we are left with 2 nodes
+b. Construct a tree
+    - Let the first element is X, find a node which doesn't appear in the sequence L
+    - Add edge X, L
+    - Remove X
