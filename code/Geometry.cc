@@ -304,12 +304,14 @@ bool isIntegerCoordinates(int x, int y, int z) {
     long long s=(long long)(x+y+z)*(x+y-z)*(x+z-y)*(y+z-x);
     return (s%4==0 && isSquare(s/4));
 }
+
 // Pick theorem
 // Given non-intersecting polygon.
 // S = area
 // I = number of integer points strictly Inside
 // B = number of points on sides of polygon
 // S = I + B/2 - 1
+
 // Smallest enclosing circle:
 // Given N points. Find the smallest circle enclosing these points.
 // Amortized complexity: O(N)

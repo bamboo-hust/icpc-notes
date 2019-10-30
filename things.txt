@@ -51,3 +51,18 @@ Knuth optimization - D
 	Plane
 	Convex hull
 	Rect in Rect
+
+Voronoi diagram
+Lagrange interpolation
+Matrix canonical form / eigendecomposition
+A-LCS
+Dual graph
+Mobius inversion
+Binary vector basis
+Half plane intersection
+Link cut tree
+Fibonacci formula
+Catalan formula
+Palindromic tree
+
+
