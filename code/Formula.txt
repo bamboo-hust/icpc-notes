@@ -1,0 +1,40 @@
+1. CRT
+Let m, n, a, b be any interger. Let g = gcd(m, n).
+    x % m = a
+    x % n = b
+if (a % g == b % g) : it has unique solution modulo lcm(n, m)
+else : no solution
+
+g = u * m + v * n
+x = (a * v * n + b * u * m) / g
+
+==================================================================
+
+2. Eigen Decomposition
+A = QDQ^{-1}
+Q = nxn matrix, ith column is eigenvector qi
+D = diagonal matrix, D_i_i is eigenvalue lambda_i
+
+==================================================================
+
+3. Generating function
+1 / ( (1-ax) ^ (k+1) ) = sum_(0->INF)_{ a^n * C(n+k, k) * x^n }
+
+==================================================================
+
+4. Partition
+Generating function : PI: (1 / (1 - x ^ k))
+p(n)=p(n-1)+p(n-2)-p(n-5)-p(n-7)+p(n-12)+p(n-15)-p(n-22)- ...
+p_k = k * (3k - 1) / 2 with k = 1, -1, 2, -2, 3, -3, ...
+ 
+==================================================================
+
+5. Center of mass
+Cx = 1/6A * sum_(0->n-1)_{ (x_i + x_i+1) * (x_i * y_i+1 - x_i+1 * y_i) }
+Cy = 1/6A * sum_(0->n-1)_{ (y_i + y_i+1) * (x_i * y_i+1 - x_i+1 * y_i) }
+A = 1/2 * sum_(0->n-1)_{(x_i * y_i+1 - x_i+1 * y_i)}
+
+==================================================================
+
+6. Fibonacci mod 10^9+9
+Fn = 276601605(691504013^n - 308495997^n) [10^9 + 9]
