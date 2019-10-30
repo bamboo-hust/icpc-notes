@@ -61,3 +61,28 @@ Euler formula: V - E + F = 2
 in dual graph: V <=> F
 in complement dual graph: (removed egdes in the original => edges in dual):
     a connected component is equivalent to a face in dual
+
+==================================================================
+
+10. Pell equation
+x^2 - ny^2 = 1
+x1, y1 is the minimal solution
+x_k+1 = x_1*x_k + n*y_1*y_k
+y_k+1 = x_1*y_k + y_1*x_k
+
+==================================================================
+
+11. Burnside lemma
+G: finite group acts on set X
+X_g: set of elements fixed by g
+Number of orbits: |X/G| = 1/|G| * sum_(g in G)_|X_g|
+
+==================================================================
+
+12. Euler function
+Gamma(z) = intergral_{0->INF}_{ x^{z-1} e^{x} dx }
+Beta(z) = intergral_{0->1}_{ t^{x-1} (1-t)^{y-1} dt }
+G(n) = (n-1)!
+G(z + 1) = zG(z)
+G(1/2) = sqrt(PI)
+B(x, y) = G(x)G(y)/G(x+y)
