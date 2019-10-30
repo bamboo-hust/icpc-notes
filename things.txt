@@ -57,7 +57,7 @@ Lagrange interpolation - done
 Matrix canonical form / eigen-decomposition - done
 A-LCS - done
 Dual graph - done
-Mobius inversion
+Mobius inversion - done
 Binary vector basis - done
 #Half plane intersection
 Link cut tree
@@ -65,11 +65,11 @@ Fibonacci formula - done
 Catalan formula - done
 Palindromic tree
 #DP optimize DivideFFT
-Pell equation
+Pell equation - done
 Cubic equation formula (RR)
 Green theorem - done
 #Karatsuba
-Burnside lemma
+Burnside lemma - done
 #Hall theorem
 Center of mass polygon - done
 Hackenbush
