@@ -3,6 +3,7 @@ CountPrimes.cc	Count primes up to N
 ExtendedEuclide.cc	Extended Euclide
 SystemLinearEquations.cc	System of linear equations
 PollardRho.cc	Pollard Rho
+Formula.cc Formula
 
 [String]
 SuffixArray.cc	Suffix Array
@@ -23,9 +24,6 @@ NTT.cc	NTT
 FFT.cc	FFT
 Bitwise-FFT.cc	Bitwise FFT
 FFT_chemthan.cc	FFT chemthan
-Partition.cc	Partition Formula
-GeneratingFunction.cc	Generating function
-CRT.cc	Chinese Remainder Theorem
 
 [Graph algorithms]
 BridgesArticulations.cc	Bridges and Articulations
