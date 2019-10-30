@@ -29,12 +29,60 @@ p_k = k * (3k - 1) / 2 with k = 1, -1, 2, -2, 3, -3, ...
  
 ==================================================================
 
-5. Center of mass
+5. Center of mass + green theorem
 Cx = 1/6A * sum_(0->n-1)_{ (x_i + x_i+1) * (x_i * y_i+1 - x_i+1 * y_i) }
 Cy = 1/6A * sum_(0->n-1)_{ (y_i + y_i+1) * (x_i * y_i+1 - x_i+1 * y_i) }
 A = 1/2 * sum_(0->n-1)_{(x_i * y_i+1 - x_i+1 * y_i)}
+Green: C_intergral(Pdx + Qdy) = 2D_intergral(dQ/dx - dP/dy)dxdy
 
 ==================================================================
 
 6. Fibonacci mod 10^9+9
 Fn = 276601605(691504013^n - 308495997^n) [10^9 + 9]
+
+==================================================================
+
+7. SQRT for loop
+for (int i = 1, la; i <= n; i = la + 1) {
+    la = n / (n / i);
+    //n / x yields the same value for i <= x <= la.
+}
+
+==================================================================
+
+8. Mobius inversion
+if g(n) = sum_(d|n)_f(d) with n >= 1
+then f(n) = sum_(d|n)_mu(d)*g(n/d) with n >= 1
+
+==================================================================
+
+9. Dual graph
+Euler formula: V - E + F = 2
+in dual graph: V <=> F
+in complement dual graph: (removed egdes in the original => edges in dual):
+    a connected component is equivalent to a face in dual
+
+==================================================================
+
+10. Pell equation
+x^2 - ny^2 = 1
+x1, y1 is the minimal solution
+x_k+1 = x_1*x_k + n*y_1*y_k
+y_k+1 = x_1*y_k + y_1*x_k
+
+==================================================================
+
+11. Burnside lemma
+G: finite group acts on set X
+X_g: set of elements fixed by g
+Number of orbits: |X/G| = 1/|G| * sum_(g in G)_|X_g|
+
+==================================================================
+
+12. Euler function
+Gamma(z) = intergral_{0->INF}_{ x^{z-1} e^{x} dx }
+Beta(z) = intergral_{0->1}_{ t^{x-1} (1-t)^{y-1} dt }
+G(n) = (n-1)!
+G(z + 1) = zG(z)
+G(1/2) = sqrt(PI)
+B(x, y) = G(x)G(y)/G(x+y)
