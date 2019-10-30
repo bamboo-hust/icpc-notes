@@ -52,11 +52,11 @@ Knuth optimization - D
 	Convex hull
 	Rect in Rect
 
-Voronoi diagram
+#Voronoi diagram
 Lagrange interpolation - done
 Matrix canonical form / eigen-decomposition - done
 A-LCS - done
-Dual graph
+Dual graph - done
 Mobius inversion
 Binary vector basis - done
 #Half plane intersection
@@ -68,7 +68,7 @@ Palindromic tree
 Pell equation
 Cubic equation formula (RR)
 Green theorem - done
-Karatsuba
+#Karatsuba
 Burnside lemma
 #Hall theorem
 Center of mass polygon - done
