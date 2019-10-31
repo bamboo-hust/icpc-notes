@@ -63,10 +63,10 @@ Binary vector basis - done
 Link cut tree - done
 Fibonacci formula - done
 Catalan formula - done
-Palindromic tree
+Palindromic tree - done
 #DP optimize DivideFFT
 Pell equation - done
-Cubic equation formula (RR)
+Cubic equation formula (RR) - done
 Green theorem - done
 #Karatsuba
 Burnside lemma - done
