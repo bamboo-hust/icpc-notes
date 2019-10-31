@@ -60,7 +60,7 @@ Dual graph - done
 Mobius inversion - done
 Binary vector basis - done
 #Half plane intersection
-Link cut tree
+Link cut tree - done
 Fibonacci formula - done
 Catalan formula - done
 Palindromic tree
@@ -72,4 +72,4 @@ Green theorem - done
 Burnside lemma - done
 #Hall theorem
 Center of mass polygon - done
-Hackenbush
+Hackenbush - done
