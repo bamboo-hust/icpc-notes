@@ -4,6 +4,8 @@ ExtendedEuclide.cc	Extended Euclide
 SystemLinearEquations.cc	System of linear equations
 PollardRho.cc	Pollard Rho
 Formula.cc Formula
+Cubic.cc	Cubic
+PythagoreTriple.cc	PythagoreTriple
 
 [String]
 SuffixArray.cc	Suffix Array
@@ -11,6 +13,8 @@ AhoCorasick.cc	Aho Corasick
 Zalgo.cc	Z algorithm
 Manacher.cc	Manacher
 SuffixAutomaton.cc	Suffix Automaton
+ALCS.cc	ACLS
+Eertree.cc	Palindromic Tree
 
 [Combinatorial optimization]
 
@@ -24,6 +28,7 @@ NTT.cc	NTT
 FFT.cc	FFT
 Bitwise-FFT.cc	Bitwise FFT
 FFT_chemthan.cc	FFT chemthan
+Interpolation_chemthan.cc	Interpolation
 
 [Graph algorithms]
 BridgesArticulations.cc	Bridges and Articulations
@@ -41,6 +46,7 @@ TwoSAT.cc	2-SAT
 Treap.cc	Treap
 BigInt.cc	Big Integer
 ITConvexHull.cc	Convex Hull IT
+LinkCutTree.cc	Link Cut Tree
 
 [Miscellaneous]
 RNG.cc	RNG
