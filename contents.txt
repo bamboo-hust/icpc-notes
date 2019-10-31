@@ -3,7 +3,7 @@ CountPrimes.cc	Count primes up to N
 ExtendedEuclide.cc	Extended Euclide
 SystemLinearEquations.cc	System of linear equations
 PollardRho.cc	Pollard Rho
-Formula.cc Formula
+Formula.txt	Formula
 Cubic.cc	Cubic
 PythagoreTriple.cc	PythagoreTriple
 
@@ -29,6 +29,7 @@ FFT.cc	FFT
 Bitwise-FFT.cc	Bitwise FFT
 FFT_chemthan.cc	FFT chemthan
 Interpolation_chemthan.cc	Interpolation
+BinaryVector.cc	Binary vector space
 
 [Graph algorithms]
 BridgesArticulations.cc	Bridges and Articulations
