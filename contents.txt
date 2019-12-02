@@ -30,6 +30,7 @@ Bitwise-FFT.cc	Bitwise FFT
 FFT_chemthan.cc	FFT chemthan
 Interpolation_chemthan.cc	Interpolation
 BinaryVector.cc	Binary vector space
+DiophanteMod.cc	DiophanteMod
 
 [Graph algorithms]
 BridgesArticulations.cc	Bridges and Articulations
@@ -42,6 +43,7 @@ Hungarian.cc	Hungarian Algorithm
 MinCut.cc	Undirected mincut
 Eulerian.cc	Eulerian Path/Circuit
 TwoSAT.cc	2-SAT
+SPFA.cc SPFA
 
 [Data structures]
 Treap.cc	Treap
